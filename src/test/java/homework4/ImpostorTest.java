@@ -6,16 +6,16 @@ import org.testng.asserts.SoftAssert;
 
 import static homework4.steps.StepsSetup.homePage;
 
-public class BadTest extends DriverSetup {
+public class ImpostorTest extends DriverSetup {
     @Test
     public void testTask1Bad() {
         SoftAssert softAssert = new SoftAssert();
 
         // 2. Assert browser title
-        softAssert.assertEquals(homePage.getTitle(), "ETO YA NE DOSTAYU DO POLA NOGAMI");
+        softAssert.assertEquals(homePage.getTitle(), "IMPOSTOR AMONG US");
 
         // 4. Assert Username is loggined
-        softAssert.assertEquals(homePage.getLoggedName(), "ILI POL DO MOIKH NOG NE DOSTAYOOOOOT");
+        softAssert.assertEquals(homePage.getLoggedName(), "SUSSY BAKA");
 
         // 5. Assert that there are 4 items on the header section are displayed, and they have proper texts
         softAssert.assertEquals(homePage.getHeaderSection().getItemsSize(), ExpectedData.HEADER_SECTION_ITEMS_SIZE);
